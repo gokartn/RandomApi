@@ -5,13 +5,6 @@
  */
 package com.random.RandomApi;
 
-import java.math.MathContext;
-import java.util.Random;
-
-/**
- *
- * @author morte
- */
 public class Data {
  
     private int logger_id;
@@ -23,14 +16,6 @@ public class Data {
     private int position;
 
     public Data() {
-        Random r = new Random();
-        this.logger_id = r.nextInt(160);
-        this.org_id = r.nextInt(160);
-        this.type = r.nextInt(160);
-        this.channels = r.nextInt(160);
-        this.providerView = 1;
-        this.providerSetup = 1;
-        this.position = r.nextInt(160);
     }
 
     public int getLogger_id() {
@@ -38,7 +23,7 @@ public class Data {
     }
 
     public void setLogger_id(int loggger_id) {
-        this.logger_id = logger_id;
+        this.logger_id = loggger_id;
     }
 
     public int getOrg_id() {
@@ -87,7 +72,5 @@ public class Data {
 
     public void setPosition(int position) {
         this.position = position;
-    }
-    
-    
+    }   
 }
