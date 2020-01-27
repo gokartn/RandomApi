@@ -26,7 +26,6 @@ public class Server {
         return data;
     }
     
-    @Autowired
     @CrossOrigin
     @RequestMapping("/updateData")
     public Data updateData() {
@@ -38,6 +37,7 @@ public class Server {
         data.setPosition(r.nextInt(100));
         data.setProviderSetup(r.nextInt(100));
         data.setProviderView(r.nextInt(100));
+        data.setMax4(0 + (4 - 0) * r.nextDouble());
         return data;
     }
 }

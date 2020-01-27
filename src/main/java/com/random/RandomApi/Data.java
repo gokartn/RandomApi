@@ -14,6 +14,7 @@ public class Data {
     private int providerView;
     private int providerSetup;
     private int position;
+    private Double max4;
 
     public Data() {
     }
